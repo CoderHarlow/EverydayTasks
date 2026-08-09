@@ -1,0 +1,1055 @@
+{
+  "navigation": {
+    "header_subtitle": "Track, log and schedule tasks",
+    "menus": {
+      "settings": "Einstellungen",
+      "export_as_csv": "Export als CSV-Datei",
+      "backup_as_file": "Erstelle Backup",
+      "restore_from_file": "Wiederherstellen",
+      "start_app_walk": "Erkläre die App",
+      "online_help": "Online Hilfe",
+      "about_the_app": "Über die App",
+      "help_translate": "App übersetzen",
+      "report_a_bug": "Fehler melden"
+    }
+  },
+
+  "system" : {
+    "notifications" : {
+      "channel_schedules": "Benachrichtigungen über fällige Aufgaben",
+      "channel_tracking": "Benachrichtigungen während Tracken von Aufgaben",
+      "channel_others": "Allgemeine Benachrichtigungen",
+      "denied_permission_message": "Ohne diese Berechtigung können keine Benachrichtigungen empfangen werden."
+    }
+  },
+
+  "forms": {
+    "common": {
+      "title_emphasis": "Bitte gib einen Titel ein",
+      "description_hint": "Eine optionale Beschreibung",
+      "button_save": "Speichern"
+    },
+    "task_event": {
+      "title_hint": "Kurzer Titel der Tätigkeit",
+      "category_hint": "Zugehörige Kategorie",
+      "category_emphasis": "Bitte wähle eine Kategorie aus",
+      "duration_hint": "Dauer der Tätigkeit",
+      "duration_emphasis": "Bitte wähle eine Dauer aus",
+      "when_at_hint": "Ausführungszeit",
+      "when_at_emphasis": "Wähle wann die Tätigkeit begann",
+      "when_on_hint": "Datum",
+      "when_on_emphasis": "Wähle an welchem Tag die Tätigkeit begann",
+      "create": {
+        "title": "Erfasse Tätigkeit",
+        "title_from_schedule": "Erfasse Tätigkeit aus Zeitplan",
+        "success": "Eine neue Tätigkeit '{title}' wurde im Verlauf erfasst"
+      },
+      "change": {
+        "title": "Tätigkeit '{title}' ändern",
+        "success": "Erfasste Tätigkeit '{title}' geändert"
+      },
+      "tracking": {
+        "start_tracking_title": "Starte Tätigkeit",
+        "start_tracking_message": "Die bestehenden Zeiten werden überschrieben, wenn das Tracking der Tätigkeit gestartet wird. Fortfahren?",
+        "stop_tracking_first": "Bitte zuerst das Tracking stoppen!",
+        "tracking_started": "Tracking gestartet",
+        "tracking_resumed": "Tracking fortgesetzt",
+        "tracking_stopped": "Tracking gestoppt",
+        "tracking_started_at": "Tätigkeit gestartet um {when}",
+        "task_started_at": "'{title}' gestartet um {when}"
+      }
+    },
+    "schedule": {
+      "title_hint": "Kurzer Titel des Zeitplans",
+      "repetition_steps_hint": "Intervall",
+      "custom_repetition_steps_description": "Wähle ein eigenes Intervall.",
+      "repetition_steps_emphasis": "Wähle ein Intervall der Aufgabe",
+      "due_at_hint": "Fällig um",
+      "due_at_emphasis": "Wähle wann die Aufgabe fällig ist",
+      "activate_schedule": "Aktiviere den Zeitplan",
+      "mark_as_important": "Markiere Zeitplan als wichtig",
+      "due_on_hint": "Fällig am",
+      "scheduled_from_emphasis": "Wähle ab wann der Zeitplan gilt",
+      "activate_reminders": "Aktiviere Erinnerung",
+      "remind_again_delay_description": "Wähle wann erneut erinnert werden soll.",
+      "remind_after": "Erneut nach {when}",
+      "remind_before_description": "Wähle Vorab-Erinnering",
+      "remind_before": "{when} vorher",
+      "repetition_mode": "Dynamische Wiederholung",
+      "repetition_mode_dynamic": "Die nächste Aufgabe ist fällig basierend auf dem gewählten Intervall und wann die letzte Aufgabe erledigt wurde.",
+      "repetition_mode_fixed": "Die nächste Aufgabe ist fällig gemäß dem gewählten Intervall, ungeachtet wann die letzte Aufgabe erledigt wurde.",
+      "repetition_mode_one_shot": "Die nächste Aufgabe ist fällig wenn das gewählten Fälligkeitsdatum erreicht wurde, ohne weitere Wiederholungen.",
+      "fixed_monthly_hint" : "Zusätzliche Fälligkeitstage pro Monat",
+      "fixed_monthly_title" : "Mögliche Tage eines willkürlichen Monats",
+      "fixed_monthly_message" : "Wähle weitere mögliche Fälligkeitstage eines willkürlichen Monats für diesen Zeitplan aus. Falls ein Tag nicht im Fälligkeitsmonat existiert (z.B. 31. April), wird der Zeitplan entsprechend zeitiger getriggert (hier 30. April). Das gleiche gilt für Schalttage.",
+      "fixed_yearly_hint" : "Zusätzliche Fälligkeitstage pro Jahr",
+      "fixed_yearly_title" : "Mögliche Tage eines willkürlichen Jahres",
+      "fixed_yearly_message" : "Wähle weitere mögliche Fälligkeitstage eines willkürlichen Jahres für diesen Zeitplan aus. Falls ein Tag nicht im Fälligkeitsjahr existiert (z.B. 31. April), wird der Zeitplan entsprechend zeitiger getriggert (hier 30. April). Das gleiche gilt für Schalttage.",
+      "create": {
+        "title": "Neuer Zeitplan",
+        "success": "Neuer Zeitplan '{title}' wurde angelegt"
+      },
+      "change": {
+        "title": "Zeitplan '{title}' ändern",
+        "success": "Zeitplan '{title}' geändert"
+      }
+    },
+    "task": {
+      "title_hint": "Kurzer Titel der Aufgabe",
+      "duration_hint": "Gewöhnliche Dauer",
+      "when_at_hint": "Gewöhnliche Ausführungszeit",
+      "reset": {
+        "title": "Aufgabe wiederherstellen",
+        "message_task": "Soll die vordefinierte Aufgabe '{title}' wiederhergestellt werden?",
+        "message_variant": "Soll die vordefinierte Variante '{title}' wiederhergestellt werden?"
+      }
+    },
+    "task_group": {
+      "title_hint": "Kurzer Name der Kategorie",
+      "reset": {
+        "title": "Kategorie wiederherstellen",
+        "message": "Soll die vordefinierte Kategorie '{name}' wiederhergestellt werden?"
+      },
+      "change_icon": {
+        "title": "Symbol ändern",
+        "message": "Wähle ein Symbol"
+      },
+      "change_color": {
+        "title": "Farbe ändern",
+        "message": "Wähle eine Farbe"
+      }
+    }
+  },
+  "pages": {
+    "quick_add": {
+      "title": "Erfassung",
+      "menu": {
+        "pinning": {
+          "pinned": "Als Startseite markiert",
+          "unpinned": "Markierung entfernt"
+        },
+        "grouping": {
+          "by_categories": "Gruppierung nach Kategorien",
+          "not_by_categories": "Keine Gruppierung"
+        },
+        "sorting": {
+          "by_category": "Nach Kategorien sortieren",
+          "by_title": "Nach Titel sortieren"
+        }
+      },
+      "action": {
+        "description" : "Was willst du erfassen?",
+        "new_quick_add": {
+          "title": "Neue Schnellerfassung",
+          "description": "Wähle eine Aufgabe oder Variante aus."
+        },
+        "new_journal_entry": {
+          "title": "Neue Tätigkeit",
+          "description": "Wähle eine Kategorie, eine Aufgabe oder eine Variante aus."
+        }
+      },
+      "addition": {
+        "success": "'{title}' wurde zur Schnellerfassung hinzugefügt",
+        "exists": "Eine Schnellerfassung für '{title}' existiert bereits"
+      },
+      "deletion": {
+        "title": "Entferne Schnellerfassung",
+        "description": "Soll die Schnellerfassung für '{title}' wirklich entfernt werden? Bestehende Aufgaben bleiben davon unberührt.",
+        "success": "Schnellerfassung für '{title}' wurde entfernt"
+      }
+    },
+    "journal": {
+      "title": "Verlauf",
+      "action": {
+        "description" : "Von was willst du eine neue Tätigkeit erfassen?",
+        "from_scratch": {
+          "title": "Von Grund auf"
+        },
+        "from_task": {
+          "title": "Von einer Aufgabe",
+          "description": "Wähle eine Kategorie, eine Aufgabe oder eine Variante aus."
+        },
+        "deletion": {
+          "title": "Lösche Tätigkeit",
+          "message": "Soll die Tätigkeit '{title}' wirklich gelöscht werden?",
+          "success": "Tätigkeit '{title}' gelöscht"
+        }
+      },
+      "details": {
+        "title": "Details",
+        "attrib_title": "Titel",
+        "attrib_category": "Kategorie",
+        "attrib_created_at": "Erfasst am",
+        "attrib_started_at": "Begonnen am",
+        "attrib_finished_at": "Beendet am",
+        "attrib_duration": "Tatsächliche Dauer",
+        "associated_task": "Zugehörige Aufgabe",
+        "associated_schedule": "Zugehörige Zeitpläne",
+        "value_uncategorized": "unkategorisiert",
+        "value_none": "keine"
+      }
+    },
+    "schedules": {
+      "title": "Zeitpläne",
+      "menu": {
+        "pinning": {
+          "pinned": "Als Startseite markiert",
+          "unpinned": "Markierung entfernt"
+        },
+        "sorting": {
+          "by_progress": "Nach Fortschritt sortieren",
+          "by_remaining_time": "Nach verbleibender Zeit sortieren",
+          "by_category": "Nach Kategorien sortieren",
+          "by_title": "Nach Titel sortieren",
+          "hide_non_active": "Nicht aktive verbergen",
+          "important_on_top": "Wichtige fällige ganz oben"
+        },
+        "notifications": {
+          "enabled": "Fälligkeitsbenachrichtigung aktiviert",
+          "disabled": "Fälligkeitsbenachrichtigung deaktiviert"
+        }
+      },
+      "overview": {
+        "running": "laufende(r)",
+        "due": "fällig",
+        "overdue": "überfällig",
+        "due_now": "jetzt fällig",
+        "paused": "pausiert",
+        "inactive": "inaktiv",
+        "scheduled": "geplant",
+        "completed": "erledigt",
+        "later_due": "später fällig",
+        "due_yesterday_and_before": "Fällig seit gestern und älter",
+        "due_today": "Heute fällig",
+        "due_tomorrow": "Morgen fällig",
+        "due_after_tomorrow": "Übermorgen fällig",
+        "paused_schedules": "Pausierte Zeitpläne",
+        "inactive_schedules": "Inaktive Zeitpläne",
+        "reminder_activated" : "Erinnerung aktiviert",
+        "reminder_passed" : "Erinnerung abgelaufen",
+        "remind_again" : "Nochmal erinnern",
+        "remind_again_successful" : "Erinnerung erneut eingestellt in {when}"
+      },
+      "notification": {
+        "title_normal_task": "Fällige geplante Aufgabe",
+        "title_fixed_task": "Fällige geplante feste Aufgabe",
+        "message_normal_task": "Geplante Aufgabe '{title}' ist fällig!",
+        "message_fixed_task": "Geplante feste Aufgabe '{title}' ist fällig!",
+        "message_fixed_last_task": "Geplante feste Aufgabe '{title}' ist fällig! Bitte klicken um weitere Benachrichtigungen zu erhalten!",
+        "pre_notification": {
+          "title_normal_task": "Geplante Aufgabe bald fällig",
+          "title_fixed_task": "Geplante feste Aufgabe bald fällig",
+          "message_normal_task": "Geplante Aufgabe '{title}' ist in {when} fällig!",
+          "message_fixed_task": "Geplante feste Aufgabe '{title}' ist in {when} fällig!"
+        },
+        "action_track": "Erfassen",
+        "action_done": "Ist erledigt",
+        "action_snooze": "In {when} erinnern"
+      },
+      "action": {
+        "reset": {
+          "title": "Fortschritt zurücksetzen",
+          "message_then": "Soll der Fortschritt des Zeitplans '{title}' wirklich zurückgesetzt werden ? Die nächste Fälligkeit ist dann {nextDueDate} um {newNextDueDate}.",
+          "message_still": "Soll der Fortschritt des Zeitplans '{title}' wirklich zurückgesetzt werden ? Die nächste Fälligkeit ist immernoch {nextDueDate} um {newNextDueDate}.",
+          "success": "Fortschritt für '{title}' wurde zurückgesetzt",
+          "title_custom": "Nächste Fälligkeit für '{title}' ist ...",
+          "success_custom": "Die nächste Fälligkeit für '{title}' wurde angepasst"
+        },
+        "move_forward": {
+          "title": "Fälligkeitsdatum überspringen",
+          "message": "Möchtest du die Fälligkeit für '{title}' auf das nächste Fälligkeitsdatum setzen, basierend auf dem Zeitplan ? Die nächste Fälligkeit ist dann {nextDueDate} um {newNextDueDate}.",
+          "success": "Fälligkeitsdatum für '{title}' angepasst"
+        },
+        "one_time": {
+          "title": "Zeitplan stoppen",
+          "message": "Du kannst den Zeitplan für '{title}' stoppen, ohne eine Tätigkeit zu erfassen. Der Zeitplan wird dann als Erledigt markiert. Fortfahren?",
+          "success": "Due date for '{title}' updated"
+        },
+        "pause_resume": {
+          "paused": "Zeitplan '{title}' pausiert",
+          "resumed": "Zeitplan '{title}' wieder fortgesetzt"
+        },
+        "addition": {
+          "title": "Plane eine Aufgabe",
+          "message": "Wähle aus, was zeitlich geplant werden soll."
+        },
+        "deletion": {
+          "title": "Lösche Zeitplan",
+          "message": "Soll der Zeitplan '{title}' wirklich gelöscht werden?",
+          "success": "Zeitplan '{title}' gelöscht"
+        }
+      },
+      "errors": {
+        "cannot_resume": "Pausierte Zeitpläne können nicht erfasst werden! Bitte erst fortsetzen.",
+        "cannot_reset": "Pausierte Zeitpläne können nicht zurückgesetzt werden! Bitte erst fortsetzen.",
+        "cannot_change_paused": "Pausierte Zeitpläne können nicht geändert werden! Bitte erst fortsetzen.",
+        "no_journal_entries": "Noch keine Erfassungen für diesen Zeitplan"
+      }
+    },
+    "tasks": {
+      "title": "Aufgaben",
+      "menu":  {
+        "restore_a_task": {
+          "title": "Aufgabe wiederherstellen",
+          "description": "Wähle eine vordefinierte Aufgabe oder Variante zum wiederherstellen.",
+          "success_group": "Kategorie '{name}' wiederhergestellt.",
+          "success_task": "Aufgabe '{title}' wiederhergestellt.",
+          "success_variant": "Variante '{title}' wiederhergestellt.",
+          "success_variant_parent_task": "Variante '{title}' mit zugehöriger Aufgabe wiederhergestellt."
+        }
+      },
+      "action": {
+        "error_nothing_selected": "Bitte erst ein Element auswählen!",
+        "description_nothing_selected": "Lege eine neue Kategorie an. Um eine bestehende Kategorie zu ändern, wähle dieser erst aus.",
+        "description_group": "Füge eine neue Aufgabe unter '{groupName}' hinzu oder ändere oder lösche die gewählte Kategorie.",
+        "description_task": "Ändere oder entferne die ausgewählte Aufgabe '{title}' oder füge eine neue Variante davon hinzu.",
+        "description_variant": "Ändere oder entferne die ausgewählte Variante '{title}' oder klone sie als Vorlage für eine neue Variante.",
+        "add_task": {
+          "title": "Neue Aufgabe hinzufügen",
+          "success": "Neue Aufgabe '{title}' hinzugefügt"
+        },
+        "change_task": {
+          "title": "Aufgabe ändern",
+          "success": "Aufgabe '{title}' geändert"
+        },
+        "move_task_down": {
+          "title": "Aufgabe in Variante umwandeln",
+          "message": "Zu welcher Aufgabe soll die umgewandelte Variante gehören?",
+          "success": "Aufgabe '{title}' in Variante umgewandelt"
+        },
+        "add_variant": {
+          "title": "Neue Variante hinzufügen",
+          "variant_postfix": "Variante",
+          "success": "Variante '{title}' hinzugefügt"
+        },
+        "change_variant": {
+          "title": "Variante ändern",
+          "success": "Variante '{title}' geändert"
+        },
+        "move_variant_up": {
+          "success": "Variante '{title}' als Aufgabe umgewandelt"
+        },
+        "clone_variant": {
+          "title": "Variante klonen",
+          "success": "Variante '{title}' geklont",
+          "cloned_postfix": "Klon"
+        },
+        "remove_task": {
+          "error_has_children": "Bitte erst zugehörige Varianten entfernen!",
+          "title": "Entferne Aufgabe",
+          "message_custom": "Die Aufgabe '{title}' soll entfernt werden. Dies kann nicht rückgängig gemacht werden!",
+          "message_predefined": "Die Aufgabe '{title}' wird entfernt indem sie versteckt wird. Du kannst sie wiederherstellen, indem du auf das Wiederherstellungs-Symbol klickst.",
+          "success": "Die Aufgabe '{title}' wurde entfernt"
+        },
+        "remove_variant": {
+          "title": "Entferne Variante",
+          "message_custom": "Die Variante '{title}' soll entfernt werden. Dies kann nicht rückgängig gemacht werden!",
+          "message_predefined": "Die Variante '{title}' wird entfernt indem sie versteckt wird. Du kannst sie wiederherstellen, indem du auf das Wiederherstellungs-Symbol klickst.",
+          "success": "Die Variante '{title}' wurde entfernt"
+        },
+        "create_task_group": {
+          "title": "Kategorie anlegen",
+          "success": "Kategorie '{name}' angelegt"
+        },
+        "change_task_group": {
+          "title": "Kategorie ändern",
+          "success": "Kategorie '{name}' geändert"
+        },
+        "remove_task_group": {
+          "error_has_children": "Bitte erst zugehörige Aufgaben entfernen!",
+          "error_has_schedules": "Bitte erst zugehörige Zeitpläne entfernen!",
+          "title": "Entferne Kategorie",
+          "message_custom": "Die Kategorie '{name}' soll entfernt werden. Dies kann nicht rückgängig gemacht werden!",
+          "message_predefined": "Die Kategorie '{name}' wird entfernt indem sie versteckt wird. Du kannst sie wiederherstellen, indem du auf das Wiederherstellungs-Symbol klickst.",
+          "success": "Die Kategorie '{name}' wurde entfernt"
+        },
+        "create_new_schedule_for_task": "Plane diese Aufgabe",
+        "create_new_schedule_for_variant": "Plane diese Variante"
+      }
+    },
+    "calendar": {
+      "title": "Aufgabenkalender"
+    },
+    "settings": {
+      "common": {
+        "title": "Allgemein",
+        "language": {
+          "title": "Sprache (Language)",
+          "dialog": {
+            "title": "Wähle eine Sprache",
+            "options": {
+              "system_default": "System-Sprache",
+              "english": "English",
+              "german": "Deutsch",
+              "french": "Français",
+              "breton": "Brezhoneg",
+              "russian": "Русский",
+              "spain": "Español",
+              "chinese": "中国人",
+              "portuguese": "Português"
+            }
+          },
+          "language_not_supported": "'{languageCode}' nicht unterstützt"
+        },
+        "theme": {
+          "title": "Dunkles Design"
+        }
+      },
+      "date_n_time": {
+        "title": "Datum & Zeit",
+        "used_date_format": {
+          "title": "Verwendetes Datumsformat",
+          "description": "Beispiel: '{example_date}'",
+          "dialog": {
+            "title": "Wähle ein Datumsformat"
+          }
+        },
+        "show_weekdays": {
+          "title": "Zeige Wochentage",
+          "description": "Zeige Wochentage in Datumsangaben"
+        },
+        "show_daytime_as_word": {
+          "title": "Zeige Tageszeit als Wort",
+          "description": "Zeigt z.B. '{evening}' für Abends"
+        },
+        "configure_daytimes": {
+          "title": "Ändere vorkonfigurierte Tageszeiten",
+          "description": "Ändert die tatsächliche Tageszeit für z.B. 'Abends'"
+        },
+        "reset_daytimes": {
+          "title": "Tageszeiten zurücksetzen",
+          "description": "Sollen alle Tageszeiten auf die Default-Werte zurückgesetzt werden?"
+        }
+      },
+      "action_feedback": {
+        "title": "Feedback",
+        "show_action_feedback": {
+          "title": "Zeige Feedback Meldungen",
+          "description": "Zeige eine kurze Meldungen nach bestimmten Nutzer-Interaktionen"
+        },
+        "duration": {
+          "title": "Anzeigedauer für Feedback Meldungen",
+          "description": "Die Dauer bevor die Meldung wieder verschwindet",
+          "dialog": {
+            "title": "Wähle deine Lesegeschwindigkeit",
+            "options": {
+              "slow": "Ich brauche mehr Zeit",
+              "normal": "Durchschnitt",
+              "quick": "Ich lese schnell",
+              "fast": "Ich bin noch schneller"
+            }
+          }
+        }
+      },
+      "behaviour": {
+        "title": "Verhalten",
+        "set_schedules_automatically_done": {
+          "title": "Setze Zeitpläne automatisch auf erledigt",
+          "description" : "Wenn neue Tätigkeiten von einer Aufgabe erfasst werden, setze alle zugehörigen Zeitpläne auf erledigt."
+        },
+        "show_schedules_count_as_badge": {
+          "title": "Zeige Indikator für fällige Aufgaben",
+          "description" : "Zeige einen Indikator mit der Anzahl fälliger Aufgaben für Zeitpläne."
+        }
+      }
+    },
+    "export": {
+      "description": "Hier kannst du den kompletten Verlauf als CSV-Datei exportieren. Der Export passiert im Hintergrund und kann eine Weile dauern.",
+      "export_created" : "CSV-Datei {dst_path} erfolgreich angelegt",
+      "export_aborted" : "CSV-Export abgebrochen!"
+    },
+    "backup": {
+      "description": "Erstelle ein Backup um deine Daten auf einem neuen Gerät oder nach einer Neuinstallation wiederherstellen zu können.",
+      "backup_created" : "Backupdatei {dst_path} erfolgreich angelegt",
+      "backup_aborted" : "Backup abgebrochen!"
+    },
+    "restore": {
+      "dialog": {
+        "title": "Backup wiederherstellen",
+        "message": "Beim Wiederherstellen aus einer Backup-Datei werden alle aktuellen Daten überschrieben! Fortfahren?"
+      },
+      "backup_restored" : "Backup wiederhergestellt",
+      "restore_aborted" : "Wiederherstellung abgebrochen!"
+    },
+    "about" : {
+      "title": "Über Everyday Tasks",
+      "message": "Everyday Tasks ist eine einfache App, um tägliche Aufgaben schnell und einfach zu erfassen, zu tracken oder zu planen.",
+      "star_it": "Wenn du die App magt, gib ihr einen Stern auf {link}"
+    }
+  },
+  "filter": {
+    "menu": {
+      "by_date_range": "Nach Zeitraum filtern",
+      "by_severity": "Nach Schwierigkeit filtern",
+      "by_favorites": "Favoriten filtern",
+      "by_schedule": "Nach Zeitplan filtern",
+      "by_task": "Nach Aufgabe filtern",
+      "clear_all": "Filter zurücksetzen"
+    },
+    "hint_filter_by_schedule": "Es wird nach Zeitplan '{title}' gefiltert. Klicke '{clearAll}' um alles zurückzusetzen.",
+    "filter_by_task_title": "Nach Aufgabe filtern",
+    "filter_by_task_description": "Wähle eine Kategorie, Aufgabe oder Variante zum filtern."
+  },
+  "stats": {
+    "title": "Verlaufsstatistik",
+    "total_count": "Anzahl",
+    "total_duration": "Dauer",
+    "by_categories": "Kategorien",
+    "by_tasks": "Aufgaben"
+  },
+  "walk_through": {
+    "banner": {
+      "text": "Lerne die App kennen! Starte eine Einführung.",
+      "start_action": "Starten",
+      "dismiss_action" : "Nein, danke"
+    },
+    "action_button": {
+      "title": "Tracke Aufgaben, lege Zeitpläne an, u.v.m. ..",
+      "description": "Klicke hier um erledigte Aufgaben zu erfassen, Shortcuts zu erstellen oder Zeitpläne für wiederkehrende Aufgaben anzulegen; je nach aktiver Seite."
+    },
+    "quick_add": {
+      "title": "Schnelles Erfassen deiner wichtigsten Aufgaben",
+      "description": "Hier kannst du Shortcuts für deine häufigsten Aufgaben anlegen um diese schnell erfassen zu können."
+    },
+    "journal": {
+      "title": "Alle erledigten Aufgaben anzeigen",
+      "description": "Auf dieser Seite wirst du alle erfassten erledigten Aufgaben sehen, die du erfasst hast."
+    },
+    "schedules": {
+      "title": "Wiederkehrende Zeitpläne anlegen",
+      "description": "Auf dieser Seite kannst du wiederkehrende Aufgaben mit einem Zeitplan versehen, um daran erinnert zu werden."
+    },
+    "tasks": {
+      "title": "Vordefinierten Aufgaben verwalten",
+      "description": "Und hier kannst du alle vordefinierten Kategorien, Aufgaben und Aufgabenvarianten ändern oder neue anlegen. Verwende diese als Vorlagen für die Aufgabenerfassung."
+    },
+    "extensions": {
+      "title": "Nach oben ziehen um Erweiterungen zu sehen",
+      "description": "Hier kannst du zusätzliche Funktionen aufrufen wie z.B. eine Kalenderübersicht."
+    }
+  },
+  "common" : {
+    "ok": "Ok",
+    "cancel": "Abbrechen",
+    "search": "Suche",
+    "show": "Anzeigen",
+    "units": {
+      "year": {
+        "zero": "Jahre",
+        "one": "Jahr",
+        "two": "Jahre",
+        "other": "Jahre"
+      },
+      "year_dative": {
+        "zero": "Jahren",
+        "one": "Jahr",
+        "two": "Jahren",
+        "other": "Jahren"
+      },
+      "month": {
+        "zero": "Monate",
+        "one": "Monat",
+        "two": "Monate",
+        "other": "Monate"
+      },
+      "month_dative": {
+        "zero": "Monaten",
+        "one": "Monat",
+        "two": "Monaten",
+        "other": "Monaten"
+      },
+      "week": {
+        "zero": "Wochen",
+        "one": "Woche",
+        "two": "Wochen",
+        "other": "Wochen"
+      },
+      "week_dative": {
+        "zero": "Wochen",
+        "one": "Woche",
+        "two": "Wochen",
+        "other": "Wochen"
+      },
+      "day": {
+        "zero": "Tage",
+        "one": "Tag",
+        "two": "Tage",
+        "other": "Tage"
+      },
+      "day_dative": {
+        "zero": "Tagen",
+        "one": "Tag",
+        "two": "Tagen",
+        "other": "Tagen"
+      },
+      "hour": {
+        "zero": "Stunden",
+        "one": "Stunde",
+        "two": "Stunden",
+        "other": "Stunden"
+      },
+      "hour_dative": {
+        "zero": "Stunden",
+        "one": "Stunde",
+        "two": "Stunden",
+        "other": "Stunden"
+      },
+      "minute": {
+        "zero": "Minuten",
+        "one": "Minute",
+        "two": "Minuten",
+        "other": "Minuten"
+      },
+      "minute_dative": {
+        "zero": "Minuten",
+        "one": "Minute",
+        "two": "Minuten",
+        "other": "Minuten"
+      },
+      "second": {
+        "zero": "Sekunden",
+        "one": "Sekunde",
+        "two": "Sekunden",
+        "other": "Sekunden"
+      },
+      "second_dative": {
+        "zero": "Sekunden",
+        "one": "Sekunde",
+        "two": "Sekunden",
+        "other": "Sekunden"
+      },
+      "item": {
+        "zero": "Tätigkeiten",
+        "one": "Tätigkeit",
+        "two": "Tätigkeiten",
+        "other": "Tätigkeiten"
+      },
+      "item_dative": {
+        "zero": "Tätigkeiten",
+        "one": "Tätigkeit",
+        "two": "Tätigkeiten",
+        "other": "Tätigkeiten"
+      },
+      "schedule": {
+        "zero": "Zeitpläne",
+        "one": "Zeitplan",
+        "two": "Zeitpläne",
+        "other": "Zeitpläne"
+      },
+      "schedule_dative": {
+        "zero": "Zeitplänen",
+        "one": "Zeitplan",
+        "two": "Zeitplänen",
+        "other": "Zeitplänen"
+      }
+    },
+    "dates": {
+      "before_yesterday": "Vorgestern",
+      "yesterday": "Gestern",
+      "today": "Heute",
+      "tomorrow": "Morgen",
+      "after_tomorrow": "Übermorgen"
+    },
+    "times": {
+      "now": "Jetzt",
+      "in_the_morning": "Morgens",
+      "at_forenoon": "Vormittags",
+      "at_noon": "Mittags",
+      "at_afternoon": "Nachmittags",
+      "in_the_evening": "Abends",
+      "at_night": "Nachts"
+    },
+    "durations": {
+      "half_an_hour": "eine halbe Stunde",
+      "three_quarters_of_an_hour": "eine dreiviertel Stunde",
+      "an_hour": "eine Stunde",
+      "one_and_a_half": "eineinhalb Stunden"
+    },
+    "words": {
+      "on_for_dates": "am",
+      "at_for_times": "um",
+      "for_for_times": "seit",
+      "in_for_times": "in",
+      "to_for_times": "bis",
+      "ago_for_times": "vor {when}",
+      "and": "und",
+      "thereof": "davon",
+      "custom": "benutzerdefiniert",
+      "around": "ungefähr",
+      "on_for_enabled": "an",
+      "off_for_disabled": "aus",
+      "clear": "zurücksetzen",
+      "important": "wichtig",
+      "value": "Wert",
+      "unit": "Einheit",
+      "unknown": "unbekannt",
+      "unspecified": "nicht angegeben",
+      "others": "andere",
+      "total": "insgesamt"
+    }
+  },
+
+  "model": {
+    "severity": {
+      "easy": "Einfach",
+      "medium": "Wie immer",
+      "hard": "Anstrengend"
+    },
+    "repetition_step": {
+      "daily": "Täglich",
+      "every_other_day": "Jeden zweiten Tag",
+      "weekly": "Wöchentlich",
+      "every_other_week": "14-Tägig",
+      "monthly": "Monatlich",
+      "every_other_month": "Jeden zweiten Monat",
+      "quarterly": "Vierteljährlich",
+      "half_yearly": "Halbjährlich",
+      "yearly": "Jährlich",
+      "every": "Aller"
+    },
+    "repetition_unit": {
+      "minutes": "Minuten",
+      "hours": "Stunden",
+      "days": "Tage",
+      "weeks": "Wochen",
+      "months": "Monate",
+      "years": "Jahre"
+    },
+    "repetition_mode": {
+      "dynamic": "Flexibel",
+      "fixed": "Fest",
+      "one_time": "Einmalig"
+    }
+  },
+
+  "task_groups": {
+    "cleaning_n_tidy_up": {
+      "name": "Putzen & Aufräumen",
+      "templates": {
+        "tidy_up": {
+          "title": "Aufräumen",
+          "variants": {
+            "tidy_up_kitchen": {
+              "title": "Küche aufräumen"
+            },
+            "tidy_up_living_room": {
+              "title": "Wohnzimmer aufräumen"
+            }
+          }
+        },
+        "cleaning": {
+          "title": "Putzen",
+          "variants": {
+            "cleaning_toilet": {
+              "title": "Toilette putzen"
+            },
+            "cleaning_sink": {
+              "title": "Waschbecken putzen"
+            },
+            "cleaning_shower_o_bathtub": {
+              "title": "Dusche / Badewanne putzen"
+            },
+            "cleaning_windows": {
+              "title": "Fenster putzen"
+            },
+            "cleaning_fridge": {
+              "title": "Kühlschrank putzen"
+            }
+          }
+        },
+        "hoovering": {
+          "title": "Staubsaugen"
+        },
+        "wiping": {
+          "title": "Wischen"
+        },
+        "empty_bin": {
+          "title": "Mülleimer leeren"
+        },
+        "dispose_wastepaper_n_used_glass": {
+          "title": "Altpapier & Altglass entsorgen"
+        }
+      }
+    },
+
+    "laundry": {
+      "name": "Wäsche",
+      "templates": {
+        "fill_washing_machine": {
+          "title": "Waschmaschine füllen"
+        },
+        "empty_washing_machine": {
+          "title": "Waschmaschine leeren",
+          "description": "Leeren und auf Wäscheständer hängen"
+        },
+        "get_from_laundry_rack": {
+          "title": "Wäscheständer abnehmen"
+        },
+        "put_to_closet": {
+          "title": "In den Schrank räumen"
+        },
+        "ironing": {
+          "title": "Bügeln"
+        },
+        "change_bed_linen": {
+          "title": "Bettwäsche wechseln"
+        },
+        "change_towels": {
+          "title": "Handtücher tauschen"
+        }
+      }
+    },
+
+    "cooking": {
+      "name": "Kochen",
+      "templates": {
+        "prepare_breakfast": {
+          "title": "Frühstück machen"
+        },
+        "cook_lunch": {
+          "title": "Mittagessen kochen"
+        },
+        "prepare_dinner": {
+          "title": "Abendbrot vorbereiten"
+        }
+      }
+    },
+
+    "dishes": {
+      "name": "Geschirr",
+      "templates": {
+        "wash_up": {
+          "title": "Abwaschen",
+          "variants": {
+            "wash_up_after_dinner": {
+              "title": "Nach Abendbrot abwaschen"
+            },
+            "wash_up_after_lunch": {
+              "title": "Nach Mittagessen abwaschen"
+            }
+          }
+        },
+        "dry_up": {
+          "title": "Abtrocknen"
+        },
+        "fill_n_start_dishwasher": {
+          "title": "Geschirrspüler füllen & starten"
+        },
+        "empty_dishwasher": {
+          "title": "Geschirrspüler ausräumen"
+        }
+      }
+    },
+
+    "errands": {
+      "name": "Einkaufen",
+      "templates": {
+        "shop_groceries": {
+          "title": "Lebensmittel einkaufen"
+        },
+        "shop_diapers": {
+          "title": "Windeln kaufen"
+        }
+      }
+    },
+
+    "kids": {
+      "name": "Kinder",
+      "templates": {
+        "feeding": {
+          "title": "Füttern"
+        },
+        "bring_to_daycare": {
+          "title": "In die Kita bringen"
+        },
+        "pickup_from_daycare": {
+          "title": "Von der Kita abholen"
+        },
+        "bring_to_bed": {
+          "title": "Ins Bett bringen"
+        }
+      }
+    },
+
+    "indoor_plants": {
+      "name": "Zimmerpflanzen",
+      "templates": {
+        "water_plants": {
+          "title": "Gießen"
+        },
+        "dung_plants": {
+          "title": "Düngen"
+        }
+      }
+    },
+
+    "garden": {
+      "name": "Garten",
+      "templates": {
+        "water_vegetable_patch": {
+          "title": "Beete gießen"
+        },
+        "dig_vegetable_patch": {
+          "title": "Beete umgraben"
+        },
+        "cut_lawn": {
+          "title": "Rasenmähen"
+        }
+      }
+    },
+
+    "maintenance": {
+      "name": "Wartung & Pflege",
+      "templates": {
+        "defrost_fridge": {
+          "title": "Gefrierschrank abtauen"
+        },
+        "fixing": {
+          "title": "Reparaturen"
+        }
+      }
+    },
+
+    "organization": {
+      "name": "Organisation",
+      "templates": {
+        "organize_vacation": {
+          "title": "Urlaub planen"
+        },
+        "shop_gifts": {
+          "title": "Geschenke recherchieren"
+        }
+      }
+    },
+
+    "car": {
+      "name": "Auto",
+      "templates": {
+        "regular_inspection": {
+          "title": "TÜV & HU"
+        },
+        "change_windshield_wipers": {
+          "title": "Scheibenwischer tauschen"
+        },
+        "change_tires": {
+          "title": "Räder wechseln",
+          "description": "Winter- / Sommerräder"
+        }
+      }
+    },
+
+    "pets": {
+      "name": "Haustiere",
+      "templates": {
+        "go_for_a_walk": {
+          "title": "Gassi gehen",
+          "description": "mit dem Hund"
+        },
+        "clean_aquarium_terrarium": {
+          "title": "Aquarium/Terrarium putzen"
+        },
+        "go_to_vet": {
+          "title": "Zum Tierarzt gehen"
+        }
+      }
+    },
+
+    "finance": {
+      "name": "Finanzen",
+      "templates": {
+        "pay_instalments": {
+          "title": "Raten zahlen"
+        },
+        "pay_rent": {
+          "title": "Miete zahlen"
+        }
+      }
+    },
+
+    "health": {
+      "name": "Gesundheit",
+      "templates": {
+        "take_medication": {
+          "title": "Medikamente nehmen"
+        },
+        "regular_health_check_up": {
+          "title": "Gesundheits-Checkup"
+        },
+        "yearly_dentist_examination": {
+          "title": "Jährliche Zahnuntersuchung"
+        }
+      }
+    },
+
+    "sport": {
+      "name": "Sport",
+      "templates": {
+        "go_to_gym": {
+          "title": "Ins Fitnessstudio gehen"
+        },
+        "do_a_workout": {
+          "title": "Laufen gehen"
+        }
+      }
+    },
+
+    "work": {
+      "name": "Arbeit",
+      "templates": {
+        "submit_expenses": {
+          "title": "Spesen einreichen"
+        },
+        "negotiate_salary": {
+          "title": "Gehalt verhandlen"
+        }
+      }
+    },
+
+    "private": {
+      "name": "Privat",
+      "templates": {
+        "call_a_friend": {
+          "title": "Einen Freund anrufen"
+        },
+        "visit_family": {
+          "title": "Die Familie besuchen"
+        }
+      }
+    },
+
+    "hygiene": {
+      "name": "Hygiene",
+      "templates": {
+        "brush_toots": {
+          "title": "Zähneputzen"
+        },
+        "take_a_shower": {
+          "title": "Duschen"
+        },
+        "go_to_the_hairdresser": {
+          "title": "Zum Friseur gehen"
+        }
+      }
+    },
+
+    "voluntary": {
+      "name": "Ehrenamtlich",
+      "templates": {
+        "donate_blood": {
+          "title": "Blut spenden"
+        },
+        "support_others": {
+          "title": "Anderen helfen"
+        }
+      }
+    },
+
+    "others": {
+      "name": "Anderes"
+    },
+
+    "deleted": {
+      "name": ""
+    }
+  }
+}

@@ -1,0 +1,1001 @@
+{
+  "navigation": {
+    "header_subtitle": "Track, log and schedule tasks",
+    "menus": {
+      "settings": "Settings",
+      "export_as_csv": "Export as CSV file",
+      "backup_as_file": "Create backup file",
+      "restore_from_file": "Restore from file",
+      "start_app_walk": "Start app walk-through",
+      "online_help": "Online help",
+      "about_the_app": "About the app",
+      "help_translate": "Help to translate",
+      "report_a_bug": "Report a bug"
+    }
+  },
+
+  "system" : {
+    "notifications" : {
+      "channel_schedules": "Notifications about due scheduled tasks",
+      "channel_tracking": "Tracking notifications",
+      "channel_others": "Common notifications",
+      "denied_permission_message": "Without this permission it wont be possible to receive notifications."
+    }
+  },
+
+  "forms": {
+    "common": {
+      "title_emphasis": "Please enter a title",
+      "description_hint": "An optional description",
+      "button_save": "Save"
+    },
+    "task_event": {
+      "title_hint": "Title of the journal entry",
+      "category_hint": "Belongs to category",
+      "category_emphasis": "Please select a category",
+      "duration_hint": "Duration",
+      "duration_emphasis": "Please select a duration",
+      "when_at_hint": "Execution time",
+      "when_at_emphasis": "Select when the task starts",
+      "when_on_hint": "Start date",
+      "when_on_emphasis": "Select which day the task starts",
+      "create": {
+        "title": "Create new journal entry",
+        "title_from_schedule": "Create new journal entry from schedule",
+        "success": "New journal entry with name '{title}' has been created"
+      },
+      "change": {
+        "title": "Change journal entry '{title}'",
+        "success": "Journal entry with name '{title}' changed"
+      },
+      "tracking": {
+        "start_tracking_title": "Start tracking",
+        "start_tracking_message": "There are some values which will be overwritten when starting the tracking. Continue?",
+        "stop_tracking_first": "Please stop tracking first!",
+        "tracking_started": "Tracking started",
+        "tracking_resumed": "Tracking resumed",
+        "tracking_stopped": "Tracking stopped",
+        "tracking_started_at": "Tracking started at {when}",
+        "task_started_at": "'{title}' started at {when}"
+      }
+    },
+    "schedule": {
+      "title_hint": "Title of the schedule",
+      "repetition_steps_hint": "Interval",
+      "custom_repetition_steps_description": "Choose a custom interval.",
+      "repetition_steps_emphasis": "Select an interval of the task",
+      "due_at_hint": "Due at",
+      "due_at_emphasis": "Select when the task is due",
+      "activate_schedule": "Activate schedule",
+      "mark_as_important": "Mark schedule as important",
+      "due_on_hint": "Due on",
+      "scheduled_from_emphasis": "Select when the schedule starts",
+      "activate_reminders": "Activate reminder",
+      "remind_again_delay_description": "Choose a delay when to remind again.",
+      "remind_after": "Again after {when}",
+      "remind_before_description": "Choose in-advance reminder",
+      "remind_before": "{when} before",
+      "repetition_mode": "Dynamic repetition mode",
+      "repetition_mode_dynamic": "Next task is due based on the chosen interval and when the recent task was done.",
+      "repetition_mode_fixed": "Next task is due based on the exact interval, no matter when the recent task was done.",
+      "repetition_mode_one_shot": "Next task is due based on the provided due date, without any repetition.",
+      "fixed_monthly_hint" : "Add additional due days per month",
+      "fixed_monthly_title" : "Possible days of an arbitrary month",
+      "fixed_monthly_message" : "Select additional due days of an arbitrary month for this schedule. If a day doesn't exist in the actual due month (e.g. 31th of April) the schedule is triggered earlier (here 30th of April). Same happens for leap days.",
+      "fixed_yearly_hint" : "Add additional due days per year",
+      "fixed_yearly_title" : "Possible days of an arbitrary year",
+      "fixed_yearly_message" : "Select additional due days of an arbitrary year for this schedule. If a day doesn't exist in the actual due year (e.g. 31th of April) the schedule is triggered earlier (here 30th of April). Same happens for leap days.",
+      "create": {
+        "title": "Create new schedule",
+        "success": "New schedule with name '{title}' has been created"
+      },
+      "change": {
+        "title": "Change schedule '{title}'",
+        "success": "Schedule with name '{title}' changed"
+      }
+    },
+    "task": {
+      "title_hint": "Title of the task",
+      "duration_hint": "Usual duration",
+      "when_at_hint": "Usual execution time",
+      "reset": {
+        "title": "Restore default",
+        "message_task": "This will restore the current task '{title}' to the predefined default.",
+        "message_variant": "This will restore the current variant '{title}' to the predefined default."
+      }
+    },
+    "task_group": {
+      "title_hint": "Name of the category",
+      "reset": {
+        "title": "Restore default",
+        "message": "This will restore the current category '{name}' to the predefined default"
+      },
+      "change_icon": {
+        "title": "Change icon",
+        "message": "Select an icon"
+      },
+      "change_color": {
+        "title": "Change color",
+        "message": "Pick a color"
+      }
+    }
+  },
+  "pages": {
+    "quick_add": {
+      "title": "QuickAdd",
+      "menu": {
+        "pinning": {
+          "pinned": "QuickAdd pinned as start page",
+          "unpinned": "Unpinned as start page"
+        },
+        "grouping": {
+          "by_categories": "Group by categories",
+          "not_by_categories": "Ungroup by categories"
+        },
+        "sorting": {
+          "by_category": "Sort by category",
+          "by_title": "Sort by title"
+        }
+      },
+      "action": {
+        "description" : "What do you want to create?",
+        "new_quick_add": {
+          "title": "New QuickAdd",
+          "description": "Select a task or variant to be added to QuickAdd."
+        },
+        "new_journal_entry": {
+          "title": "New journal entry",
+          "description": "Select a category, a task or a variant to be used for a new journal entry."
+        }
+      },
+      "addition": {
+        "success": "'{title}' has been added to QuickAdd",
+        "exists": "A QuickAdd for '{title}' still exists"
+      },
+      "deletion": {
+        "title": "Remove QuickAdd",
+        "description": "Are you sure to remove QuickAdd for '{title}'? This will not affect the associated task.",
+        "success": "QuickAdd for '{title}' has been removed"
+      }
+    },
+    "journal": {
+      "title": "Journal",
+      "action": {
+        "description" : "From what do you want to create a new journal entry?",
+        "from_scratch": {
+          "title": "From scratch"
+        },
+        "from_task": {
+          "title": "From task",
+          "description": "Select a category, a task or a variant to be used for a new journal entry."
+        },
+        "deletion": {
+          "title": "Delete journal entry",
+          "message": "Are you sure to delete entry '{title}' ?",
+          "success": "Journal entry '{title}' deleted"
+        }
+      },
+      "details": {
+        "title": "Entry details",
+        "attrib_title": "Title",
+        "attrib_category": "Category",
+        "attrib_created_at": "Created at",
+        "attrib_started_at": "Started at",
+        "attrib_finished_at": "Finished at",
+        "attrib_duration": "Actual duration",
+        "associated_task": "Associated task",
+        "associated_schedule": "Associated schedules",
+        "value_uncategorized": "uncategorized",
+        "value_none": "none"
+      }
+    },
+    "schedules": {
+      "title": "Schedules",
+      "menu": {
+        "pinning": {
+          "pinned": "Schedules pinned as start page",
+          "unpinned": "Unpinned as start page"
+        },
+        "sorting": {
+          "by_progress": "Sort by progress",
+          "by_remaining_time": "Sort by remaining time",
+          "by_category": "Sort by category",
+          "by_title": "Sort by title",
+          "hide_non_active": "Hide inactive",
+          "important_on_top": "Important due on top"
+        },
+        "notifications": {
+          "enabled": "All reminders and notifications enabled",
+          "disabled": "All reminders and notifications disabled"
+        }
+      },
+      "overview": {
+        "running": "running",
+        "due": "due",
+        "overdue": "overdue",
+        "due_now": "due now",
+        "paused": "paused",
+        "inactive": "inactive",
+        "scheduled": "scheduled",
+        "completed": "completed",
+        "later_due": "due later",
+        "due_yesterday_and_before": "Due before today",
+        "due_today": "Due today",
+        "due_tomorrow": "Due tomorrow",
+        "due_after_tomorrow": "Due after tomorrow",
+        "paused_schedules": "Paused schedules",
+        "inactive_schedules": "Inactive schedules",
+        "reminder_activated" : "Reminder activated",
+        "reminder_passed" : "Reminder passed",
+        "remind_again" : "Remind again",
+        "remind_again_successful" : "Reminder will appear again in {when}"
+      },
+      "notification": {
+        "title_normal_task": "Due scheduled task",
+        "title_fixed_task": "Due scheduled fixed task",
+        "message_normal_task": "Scheduled task '{title}' is due!",
+        "message_fixed_task": "Scheduled fixed task '{title}' is due!",
+        "message_fixed_last_task": "Scheduled fixed task '{title}' is due! Please click to get future notifications!",
+        "pre_notification": {
+          "title_normal_task": "Scheduled task is due soon",
+          "title_fixed_task": "Scheduled fixed task is due soon",
+          "message_normal_task": "Scheduled task '{title}' is due in {when}.",
+          "message_fixed_task": "Scheduled fixed task '{title}' is due in {when}."
+        },
+        "action_track": "Log or track",
+        "action_done": "It's done",
+        "action_snooze": "Remind in {when}"
+      },
+      "action": {
+        "reset": {
+          "title": "Reset progress",
+          "message_then": "Are you sure to reset the progress of '{title}' ? The schedule is then due {nextDueDate} at {newNextDueDate}.",
+          "message_still": "Are you sure to reset the progress of '{title}' ? The schedule is still due {nextDueDate} at {newNextDueDate}.",
+          "success": "Progress for '{title}' reset to now",
+          "title_custom": "Next due date for '{title}' is ...",
+          "success_custom": "Next due date for '{title}' updated"
+        },
+        "move_forward": {
+          "title": "Skip due date",
+          "message": "Do you want to move forward the due date of '{title}' to the next date based on the schedule? The schedule is then due {nextDueDate} at {newNextDueDate}.",
+          "success": "Due date for '{title}' updated"
+        },
+        "one_time": {
+          "title": "Stop schedule",
+          "message": "You are about to stop the current one-time schedule of '{title}'. The schedule will be marked as completed without a new journal entry. Are you sure?",
+          "success": "Due date for '{title}' updated"
+        },
+        "pause_resume": {
+          "paused": "Schedule '{title}' paused",
+          "resumed": "Schedule '{title}' resumed"
+        },
+        "addition": {
+          "title": "Schedule a task",
+          "message": "Select a category, a task or variant to be repeatedly scheduled."
+        },
+        "deletion": {
+          "title": "Delete schedule",
+          "message": "Are you sure to delete schedule '{title}' ?",
+          "success": "Schedule '{title}' deleted"
+        }
+      },
+      "errors": {
+        "cannot_resume": "Cannot execute paused schedule! Resume it first!",
+        "cannot_reset": "Cannot reset paused schedule! Resume it first!",
+        "cannot_change_paused": "Cannot change paused schedule! Resume it first!",
+        "no_journal_entries": "No journal entries for this schedule so far"
+      }
+    },
+    "tasks": {
+      "title": "Tasks",
+      "menu":  {
+        "restore_a_task": {
+          "title": "Restore a task",
+          "description": "Select a previously removed predefined task or variant to be restored.",
+          "success_group": "Category '{name}' restored.",
+          "success_task": "Task '{title}' restored.",
+          "success_variant": "Variant '{title}' restored.",
+          "success_variant_parent_task": "Variant '{title}' and parent task restored."
+        }
+      },
+      "action": {
+        "error_nothing_selected": "Please select an item first!",
+        "description_nothing_selected": "Create a new category. To change an existing category, select it first.",
+        "description_group": "Add a new task underneath '{groupName}' or change or delete the current selected category.",
+        "description_task": "Change or remove the selected task '{title}' or add a new variant underneath it.",
+        "description_variant": "Change or remove the selected variant '{title}' or clone it as a new one.",
+        "add_task": {
+          "title": "Add new task",
+          "success": "New task with name '{title}' added"
+        },
+        "change_task": {
+          "title": "Change task",
+          "success": "Task with name '{title}' changed"
+        },
+        "move_task_down": {
+          "title": "Transform task to variant",
+          "message": "To which task shall the transformed variant belong to?",
+          "success": "Task with name '{title}' transformed to variant"
+        },
+        "add_variant": {
+          "title": "Add new variant",
+          "variant_postfix": "variant",
+          "success": "Variant with name '{title}' added"
+        },
+        "change_variant": {
+          "title": "Change variant",
+          "success": "Variant with name '{title}' changed"
+        },
+        "move_variant_up": {
+          "success": "Variant with name '{title}' transformed to task"
+        },
+        "clone_variant": {
+          "title": "Clone variant",
+          "success": "Variant with name '{title}' cloned",
+          "cloned_postfix": "cloned"
+        },
+        "remove_task": {
+          "error_has_children": "Remove underneath variants first!",
+          "title": "Remove task",
+          "message_custom": "This will remove the current task '{title}'. This cannot be underdone!",
+          "message_predefined": "This will remove the current task '{title}' by hiding it. You can restore it by clicking on the restore action icon.",
+          "success": "The task '{title}' has been removed"
+        },
+        "remove_variant": {
+          "title": "Remove variant",
+          "message_custom": "This will remove the current variant '{title}'. This cannot be underdone!",
+          "message_predefined": "This will remove the current variant '{title}' by hiding it. You can restore it by clicking on the restore action icon.",
+          "success": "The variant '{title}' has been removed"
+        },
+        "create_task_group": {
+          "title": "Create category",
+          "success": "Category '{name}' created"
+        },
+        "change_task_group": {
+          "title": "Change category",
+          "success": "Category '{name}' changed"
+        },
+        "remove_task_group": {
+          "error_has_children": "Remove underneath tasks first!",
+          "error_has_schedules": "Remove associated schedules first!",
+          "title": "Remove category",
+          "message_custom": "This will remove the current category '{name}'. This cannot be underdone!",
+          "message_predefined": "This will remove the current category '{name}' by hiding it. You can restore it by clicking on the restore action icon.",
+          "success": "The category '{name}' has been removed"
+        },
+        "create_new_schedule_for_task": "Schedule this task",
+        "create_new_schedule_for_variant": "Schedule this variant"
+      }
+    },
+    "calendar": {
+      "title": "Task Calendar"
+    },
+    "settings": {
+      "common": {
+        "title": "Common",
+        "language": {
+          "title": "Language",
+          "dialog": {
+            "title": "Choose a language",
+            "options": {
+              "system_default": "System language",
+              "english": "English",
+              "german": "Deutsch",
+              "french": "Français",
+              "breton": "Brezhoneg",
+              "russian": "Русский",
+              "spain": "Español",
+              "chinese": "中国人",
+              "portuguese": "Português"
+            }
+          },
+          "language_not_supported": "'{languageCode}' not supported"
+        },
+        "theme": {
+          "title": "Dark theme"
+        }
+      },
+      "date_n_time": {
+        "title": "Date & Time",
+        "used_date_format": {
+          "title": "Used date format",
+          "description": "E.g. '{example_date}'",
+          "dialog": {
+            "title": "Choose a date format"
+          }
+        },
+        "show_weekdays": {
+          "title": "Show weekdays",
+          "description": "Show weekdays for dates"
+        },
+        "show_daytime_as_word": {
+          "title": "Show daytime as word",
+          "description": "E.g. shows '{evening}' for the evening"
+        },
+        "configure_daytimes": {
+          "title": "Change preconfigured daytimes",
+          "description": "Changes the actual daytime of e.g. 'evening'"
+        },
+        "reset_daytimes": {
+          "title": "Reset daytimes",
+          "description": "Do you want to reset the current configured daytimes to the default values?"
+        }
+      },
+      "action_feedback": {
+        "title": "Action feedback",
+        "show_action_feedback": {
+          "title": "Show action feedback",
+          "description": "Shows a short message after several user actions"
+        },
+        "duration": {
+          "title": "Action feedback duration",
+          "description": "Duration before messages disappear",
+          "dialog": {
+            "title": "Choose your read duration",
+            "options": {
+              "slow": "I need more time",
+              "normal": "Normal speed",
+              "quick": "I read quickly",
+              "fast": "I am super fast"
+            }
+          }
+        }
+      },
+      "behaviour": {
+        "title": "Behaviour",
+        "set_schedules_automatically_done": {
+          "title": "Set schedules automatically done",
+          "description" : "When creating a new journal entry with a task used by one or more schedules, automatically set these schedules done."
+        },
+        "show_schedules_count_as_badge": {
+          "title": "Show due scheduled tasks indicator",
+          "description" : "Show a badge indicator displaying the number of due or overdue scheduled tasks."
+        }
+      }
+    },
+    "export": {
+      "description": "Here you can takeout all journal entries as CSV file. The export happens in the background and may take a while.",
+      "export_created" : "CSV file {dst_path} created",
+      "export_aborted" : "CSV export aborted!"
+    },
+    "backup": {
+      "description": "Create a backup to be able to restore your data either on another device or after a fresh installation.",
+      "backup_created" : "Backup file {dst_path} created",
+      "backup_aborted" : "Backup aborted!"
+    },
+    "restore": {
+      "dialog": {
+        "title": "Restore from file",
+        "message": "Restoring a backup file will swipe all your current data! Continue?"
+      },
+      "backup_restored" : "Backup restored",
+      "restore_aborted" : "Restore aborted!"
+    },
+    "about" : {
+      "title": "About Everyday Tasks",
+      "message": "Everyday Tasks is an easy and quickly to use app to log, track and schedule daily tasks",
+      "star_it": "If you like the app, give a star on {link}"
+    }
+  },
+  "filter": {
+    "menu": {
+      "by_date_range": "Filter by date range",
+      "by_severity": "Filter by severity",
+      "by_favorites": "Filter favorites",
+      "by_schedule": "Filter by schedule",
+      "by_task": "Filter by task",
+      "clear_all": "Clear filters"
+    },
+    "hint_filter_by_schedule": "Filter by schedule '{title}' is selected. Click '{clearAll}' to reset.",
+    "filter_by_task_title": "Filter by task",
+    "filter_by_task_description": "Select a category, task or variant to filter by."
+  },
+  "stats": {
+    "title": "Journal statistics",
+    "total_count": "Total count",
+    "total_duration": "Duration",
+    "by_categories": "Categories",
+    "by_tasks": "Tasks"
+  },
+  "walk_through": {
+    "banner": {
+      "text": "Learn how the app works! Start a walk-through here.",
+      "start_action": "Start",
+      "dismiss_action" : "Dismiss"
+    },
+    "action_button": {
+      "title": "Track tasks, create schedules etc..",
+      "description": "Click here to track tasks, bookmark them or create schedules. The actions are based on the selected page."
+    },
+    "quick_add": {
+      "title": "Fast tracking of your most important tasks",
+      "description": "Here you can bookmark your most frequent tasks to set them done quickly."
+    },
+    "journal": {
+      "title": "See all completed tasks",
+      "description": "On this page you will see all ever tracked and logged completed tasks."
+    },
+    "schedules": {
+      "title": "Schedule recurring tasks",
+      "description": "On this page you can define recurring tasks based on a schedule to get notified when due."
+    },
+    "tasks": {
+      "title": "Manage all predefined tasks",
+      "description": "And there you can manage all categories, tasks and variants to be used as templates."
+    },
+    "extensions": {
+      "title": "Drag up to see more extensions",
+      "description": "Here you can access additional features like an overall calendar view."
+    }
+  },
+  "common" : {
+    "ok": "Ok",
+    "cancel": "Cancel",
+    "search": "Search",
+    "show": "Show",
+    "units": {
+      "year": {
+        "zero": "years",
+        "one": "year",
+        "two": "years",
+        "other": "years"
+      },
+      "month": {
+        "zero": "months",
+        "one": "month",
+        "two": "months",
+        "other": "months"
+      },
+      "week": {
+        "zero": "weeks",
+        "one": "week",
+        "two": "weeks",
+        "other": "weeks"
+      },
+      "day": {
+        "zero": "days",
+        "one": "day",
+        "two": "days",
+        "other": "days"
+      },
+      "hour": {
+        "zero": "hours",
+        "one": "hour",
+        "two": "hours",
+        "other": "hours"
+      },
+      "minute": {
+        "zero": "minutes",
+        "one": "minute",
+        "two": "minutes",
+        "other": "minutes"
+      },
+      "second": {
+        "zero": "seconds",
+        "one": "second",
+        "two": "seconds",
+        "other": "seconds"
+      },
+      "item": {
+        "zero": "entries",
+        "one": "entry",
+        "two": "entries",
+        "other": "entries"
+      },
+      "schedule": {
+        "zero": "schedules",
+        "one": "schedule",
+        "two": "schedules",
+        "other": "schedules"
+      }
+    },
+    "dates": {
+      "before_yesterday": "Before yesterday",
+      "yesterday": "Yesterday",
+      "today": "Today",
+      "tomorrow": "Tomorrow",
+      "after_tomorrow": "After tomorrow"
+    },
+    "times": {
+      "now": "Now",
+      "in_the_morning": "In the morning",
+      "at_forenoon": "At forenoon",
+      "at_noon": "At noon",
+      "at_afternoon": "At afternoon",
+      "in_the_evening": "In the evening",
+      "at_night": "At night"
+    },
+    "durations": {
+      "half_an_hour": "half an hour",
+      "three_quarters_of_an_hour": "three quarters of an hour",
+      "an_hour": "an hour",
+      "one_and_a_half": "one and a half hours"
+    },
+    "words": {
+      "on_for_dates": "on",
+      "at_for_times": "at",
+      "for_for_times": "for",
+      "in_for_times": "in",
+      "to_for_times": "to",
+      "ago_for_times": "{when} ago",
+      "and": "and",
+      "thereof": "thereof",
+      "custom": "custom",
+      "around": "around",
+      "on_for_enabled": "on",
+      "off_for_disabled": "off",
+      "clear": "clear",
+      "important": "important",
+      "value": "value",
+      "unit": "unit",
+      "unknown": "unknown",
+      "unspecified": "not set",
+      "others": "others",
+      "total": "total"
+    }
+  },
+
+  "model": {
+    "severity": {
+      "easy": "Easy going",
+      "medium": "As always",
+      "hard": "Exhausting"
+    },
+    "repetition_step": {
+      "daily": "Daily",
+      "every_other_day": "Every other day",
+      "weekly": "Weekly",
+      "every_other_week": "Biweekly",
+      "monthly": "Monthly",
+      "every_other_month": "Bimonthly",
+      "quarterly": "Quarterly",
+      "half_yearly": "Half yearly",
+      "yearly": "Yearly",
+      "every": "Every"
+    },
+    "repetition_unit": {
+      "minutes": "Minutes",
+      "hours": "Hours",
+      "days": "Days",
+      "weeks": "Weeks",
+      "months": "Months",
+      "years": "Years"
+    },
+    "repetition_mode": {
+      "dynamic": "Flexible",
+      "fixed": "Fixed",
+      "one_time": "One-time"
+    }
+  },
+
+  "task_groups": {
+    "cleaning_n_tidy_up": {
+      "name": "Cleaning & Tidy up",
+      "templates": {
+        "tidy_up": {
+          "title": "Tidy up",
+          "variants": {
+            "tidy_up_kitchen": {
+              "title": "Tidy up kitchen"
+            },
+            "tidy_up_living_room": {
+              "title": "Tidy up living room"
+            }
+          }
+        },
+        "cleaning": {
+          "title": "Cleaning",
+          "variants": {
+            "cleaning_toilet": {
+              "title": "Cleaning toilet"
+            },
+            "cleaning_sink": {
+              "title": "Cleaning sink"
+            },
+            "cleaning_shower_o_bathtub": {
+              "title": "Cleaning shower / bathtub"
+            },
+            "cleaning_windows": {
+              "title": "Cleaning windows"
+            },
+            "cleaning_fridge": {
+              "title": "Cleaning fridge"
+            }
+          }
+        },
+        "hoovering": {
+          "title": "Hoovering"
+        },
+        "wiping": {
+          "title": "Wiping"
+        },
+        "empty_bin": {
+          "title": "Empty bin"
+        },
+        "dispose_wastepaper_n_used_glass": {
+          "title": "Dispose wastepaper & used glass"
+        }
+      }
+    },
+
+    "laundry": {
+      "name": "Laundry",
+      "templates": {
+        "fill_washing_machine": {
+          "title": "Fill washing machine"
+        },
+        "empty_washing_machine": {
+          "title": "Empty washing machine",
+          "description": "Empty it and put on laundry rack"
+        },
+        "get_from_laundry_rack": {
+          "title": "Get from laundry rack"
+        },
+        "put_to_closet": {
+          "title": "Put to closet"
+        },
+        "ironing": {
+          "title": "Ironing"
+        },
+        "change_bed_linen": {
+          "title": "Change bed linen"
+        },
+        "change_towels": {
+          "title": "Change towels"
+        }
+      }
+    },
+
+    "cooking": {
+      "name": "Cooking",
+      "templates": {
+        "prepare_breakfast": {
+          "title": "Prepare breakfast"
+        },
+        "cook_lunch": {
+          "title": "Cook lunch"
+        },
+        "prepare_dinner": {
+          "title": "Prepare dinner"
+        }
+      }
+    },
+
+    "dishes": {
+      "name": "Dishes",
+      "templates": {
+        "wash_up": {
+          "title": "Wash up",
+          "variants": {
+            "wash_up_after_dinner": {
+              "title": "Wash up after dinner"
+            },
+            "wash_up_after_lunch": {
+              "title": "Wash up after lunch"
+            }
+          }
+        },
+        "dry_up": {
+          "title": "Dry up"
+        },
+        "fill_n_start_dishwasher": {
+          "title": "Fill & start dishwasher"
+        },
+        "empty_dishwasher": {
+          "title": "Empty dishwasher"
+        }
+      }
+    },
+
+    "errands": {
+      "name": "Errands",
+      "templates": {
+        "shop_groceries": {
+          "title": "Shop groceries"
+        },
+        "shop_diapers": {
+          "title": "Shop diapers"
+        }
+      }
+    },
+
+    "kids": {
+      "name": "Kids",
+      "templates": {
+        "feeding": {
+          "title": "Feeding"
+        },
+        "bring_to_daycare": {
+          "title": "Bring to daycare"
+        },
+        "pickup_from_daycare": {
+          "title": "Pickup from daycare"
+        },
+        "bring_to_bed": {
+          "title": "Bring to bed"
+        }
+      }
+    },
+
+    "indoor_plants": {
+      "name": "Indoor plants",
+      "templates": {
+        "water_plants": {
+          "title": "Water plants"
+        },
+        "dung_plants": {
+          "title": "Dung plants"
+        }
+      }
+    },
+
+    "garden": {
+      "name": "Garden",
+      "templates": {
+        "water_vegetable_patch": {
+          "title": "Water vegetable patch"
+        },
+        "dig_vegetable_patch": {
+          "title": "Dig vegetable patch"
+        },
+        "cut_lawn": {
+          "title": "Cut lawn"
+        }
+      }
+    },
+
+    "maintenance": {
+      "name": "Maintenance",
+      "templates": {
+        "defrost_fridge": {
+          "title": "Defrost fridge"
+        },
+        "fixing": {
+          "title": "Fixing"
+        }
+      }
+    },
+
+    "organization": {
+      "name": "Organization",
+      "templates": {
+        "organize_vacation": {
+          "title": "Organize vacation"
+        },
+        "shop_gifts": {
+          "title": "Investigate gifts"
+        }
+      }
+    },
+
+    "car": {
+      "name": "Car",
+      "templates": {
+        "regular_inspection": {
+          "title": "Regular inspection"
+        },
+        "change_windshield_wipers": {
+          "title": "Change windshield wipers"
+        },
+        "change_tires": {
+          "title": "Change wheels",
+          "description": "winter / summer wheels"
+        }
+      }
+    },
+
+    "pets": {
+      "name": "Pets",
+      "templates": {
+        "go_for_a_walk": {
+          "title": "Go for a walk",
+          "description": "with the dog"
+        },
+        "clean_aquarium_terrarium": {
+          "title": "Clean aquarium/terrarium"
+        },
+        "go_to_vet": {
+          "title": "Go to vet"
+        }
+      }
+    },
+
+    "finance": {
+      "name": "Finance",
+      "templates": {
+        "pay_instalments": {
+          "title": "Pay instalments"
+        },
+        "pay_rent": {
+          "title": "Pay rent"
+        }
+      }
+    },
+
+    "health": {
+      "name": "Health",
+      "templates": {
+        "take_medication": {
+          "title": "Take medication"
+        },
+        "regular_health_check_up": {
+          "title": "Regular health check up"
+        },
+        "yearly_dentist_examination": {
+          "title": "Yearly dentist examination"
+        }
+      }
+    },
+
+    "sport": {
+      "name": "Sport",
+      "templates": {
+        "go_to_gym": {
+          "title": "Go to gym"
+        },
+        "do_a_workout": {
+          "title": "Do a workout"
+        }
+      }
+    },
+
+    "work": {
+      "name": "Work",
+      "templates": {
+        "submit_expenses": {
+          "title": "Submit expenses"
+        },
+        "negotiate_salary": {
+          "title": "Negotiate salary"
+        }
+      }
+    },
+
+    "private": {
+      "name": "Private",
+      "templates": {
+        "call_a_friend": {
+          "title": "Call a friend"
+        },
+        "visit_family": {
+          "title": "Visit family"
+        }
+      }
+    },
+
+    "hygiene": {
+      "name": "Hygiene",
+      "templates": {
+        "brush_toots": {
+          "title": "Brush toots"
+        },
+        "take_a_shower": {
+          "title": "Take a shower"
+        },
+        "go_to_the_hairdresser": {
+          "title": "Go to the hairdresser"
+        }
+      }
+    },
+
+    "voluntary": {
+      "name": "Voluntary",
+      "templates": {
+        "donate_blood": {
+          "title": "Donate blood"
+        },
+        "support_others": {
+          "title": "Support others"
+        }
+      }
+    },
+
+    "others": {
+      "name": "Others"
+    },
+    "deleted": {
+      "name": ""
+    }
+
+  }
+}
